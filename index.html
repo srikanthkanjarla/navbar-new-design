@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New Navbar design</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./navbar.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand logo" href="#"><img src="./logo-white.png" alt="zylyx logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#services">Services <i
+                            class="fas fa-angle-down"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#industry">Industries <i
+                            class="fas fa-angle-down"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#about">About Us <i
+                            class="fas fa-angle-down"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Modal - 1 about us -->
+    <div class="modal" tabindex="-1" role="dialog" id="about">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <!-- <p>Modal body text goes here.</p> -->
+                    <div class="row text-center mx-5">
+                        <div class="col-lg-6 col-sm-12 modal-col-1 p-3">
+                            <div class="mx-4">
+                                <h1 class="title py-3 text-light">About us</h1>
+                                <h3 class="text-left description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Voluptatem asperiores ratione corporis,</h3>
+                                <p class="text-center mt-5 read-more-link"><a
+                                        class="btn btn-lg btn-outline-primary hvr-sweep-to-righthvr-sweep-to-right"
+                                        href="#">Know More</a></p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                            <div class="mx-4">
+                                <h1 class="title py-3 text-light">Why ZYCLYX</h1>
+                                <h3 class="text-left description">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Voluptatem asperiores ratione corporis,</h3>
+                                <p class="text-center mt-5 read-more-link"><a class="btn btn-lg btn-outline-primary"
+                                        href="#">Know More</a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - 2 Industries-->
+    <div class="modal" tabindex="-1" role="dialog" id="industry">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <!-- <p>Modal body text goes here.</p> -->
+                    <div class="row text-center mx-5">
+                        <div class="col-lg-6 col-sm-12 modal-col-1 p-3 mt-5">
+                            <div class="mx-4 my-5">
+                                <!-- <h1 class="title py-3">About us</h1> -->
+                                <h3 class="text-left text-light">Powered by AI, our digital platform is transforming
+                                    what’s possible across Banking industry.<a class="btn btn-lg btn-link ind-read"
+                                        href="#">Read More</a></h3>
+                            </div>
+                            <div class="mx-4 my-5">
+                                <!-- <h1 class="title py-3">About us</h1> -->
+                                <h3 class="text-left text-light">Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Nam quae autem eius cum aperiam.<a class="btn btn-lg btn-link ind-read"
+                                        href="#">Read More</a></h3>
+                                <p class="text-center mt-5"></p>
+                            </div>
+
+
+                        </div>
+                        <div class="col-lg-6 col-sm-12 d-flex align-items-center justify-content-center">
+                            <div class="mx-4">
+                                <ul class="text-left m-0 industry-list">
+                                    <li><a href="#">Retail</a></li>
+                                    <li><a href="#">Telecom</a></li>
+                                    <li><a href="#">Health Care</a></li>
+                                    <li><a href="#">Banking & Finance</a></li>
+                                    <li><a href="#">Logistics</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal - 3 services -->
+    <div class="modal" tabindex="-1" role="dialog" id="services">
+        <div class="modal-dialog my-modal" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="row text-center mx-5">
+                        <div class="col-lg-6 col-sm-12 modal-col-1 p-3">
+                            <div class="mx-4 service-tabs">
+                                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="tab-1-1" data-toggle="tab" href="#tab-1"
+                                            role="tab" aria-controls="home" aria-selected="true">New Age Technologies</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-2-1" data-toggle="tab" href="#tab-2"
+                                            role="tab" aria-controls="profile" aria-selected="false">Cloud Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-3-1" data-toggle="tab" href="#tab-3"
+                                            role="tab" aria-controls="contact" aria-selected="false">Data Management</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-4-1" data-toggle="tab" href="#tab-4"
+                                            role="tab" aria-controls="home" aria-selected="true">Application Development</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-5-1" data-toggle="tab" href="#tab-5"
+                                            role="tab" aria-controls="profile" aria-selected="false">Data Governance</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-6-1" data-toggle="tab" href="#tab-6"
+                                            role="tab" aria-controls="contact" aria-selected="false">Security Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-7-1" data-toggle="tab" href="#tab-7"
+                                            role="tab" aria-controls="home" aria-selected="true">BI Solutions</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" id="tab-8-1" data-toggle="tab" href="#tab-8"
+                                            role="tab" aria-controls="profile" aria-selected="false">Infrastructure</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-12 d-flex justify-content-center align-items-center">
+                            <div class="mx-4">
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel"
+                                        aria-labelledby="tab-1-1">
+                                        <ul class="text-left m-0 industry-list">
+                                            <li><a href="#">Artificial Inteligence</a></li>
+                                            <li><a href="#">RPA</a></li>
+                                            <li><a href="#">BlockChain</a></li>
+                                            <li><a href="#">IOT</a></li>                                             
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-2" role="tabpanel"
+                                        aria-labelledby="tab-2-1">
+                                        <ul class="text-left m-0 industry-list">
+                                                <li><a href="#">IT Service Management</a></li>
+                                                <li><a href="#">Cloud Hosting Service</a></li>
+                                                <li><a href="#">Outsourcing Services</a></li>                                             
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-3" role="tabpanel"
+                                        aria-labelledby="tab-3-1">
+                                        <ul class="text-left m-0 industry-list">
+                                                <li><a href="#">Data Warehousing</a></li>
+                                                <li><a href="#">Data Integration</a></li>                                                 
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="tab-4" role="tabpanel"
+                                    aria-labelledby="tab-4-1">
+                                    <ul class="text-left m-0 industry-list">
+                                            <li><a href="#">Application Development</a></li>
+                                            <li><a href="#">Product Engineering</a></li>
+                                            <li><a href="#">Web Development</a></li>
+                                            <li><a href="#">Digital Marketing</a></li>                                             
+                                    </ul>
+                                </div>
+                                <div class="tab-pane fade" id="tab-5" role="tabpanel"
+                                aria-labelledby="tab-5-1">
+                                <ul class="text-left m-0 industry-list">
+                                    <li><a href="#">Meta Data Management</a></li>
+                                    <li><a href="#">Master Data Management</a></li>
+                                    <li><a href="#">Data Quality</a></li>                                     
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="tab-6" role="tabpanel"
+                            aria-labelledby="tab-6-1">
+                            <ul class="text-left m-0 industry-list">
+                                <li><a href="#">Cyber Security Service</a></li>
+                                <li><a href="#">IT Security Service</a></li>
+                                <li><a href="#">Information Security Service</a></li>                                 
+                            </ul>
+                        </div>
+                        <div class="tab-pane fade" id="tab-7" role="tabpanel"
+                        aria-labelledby="tab-7-1">
+                        <ul class="text-left m-0 industry-list">
+                            <li><a href="#">Data Visualisation</a></li>
+                            <li><a href="#">Predictive Analysis</a></li>                             
+                        </ul>
+                    </div>
+                    <div class="tab-pane fade" id="tab-8" role="tabpanel"
+                    aria-labelledby="tab-8-1">
+                    <ul class="text-left m-0 industry-list">
+                        <li><a href="#">Data Center Transformation</a></li>
+                        <li><a href="#">Data Center Service</a></li>
+                        <li><a href="#">Network Operations</a></li>
+                        <li><a href="#">Security Operations</a></li>
+                        <li><a href="#">Big Data</a></li>
+                        <li><a href="#">End User Computing</a></li>
+
+                    </ul>
+                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/e802a17a48.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
